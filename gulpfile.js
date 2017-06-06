@@ -11,21 +11,10 @@ var folders = [
 ];
 
 
-gulp.task('createBuild', function(){
+gulp.task('default', function(){
     return gulp.src(folders,{base:'./'})
         .pipe(gulp.dest('./build/'))
 
 });
 
 
-gulp.task('default', function() {
-
-
-
-
-
-
-
-
-
-});

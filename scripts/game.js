@@ -1,12 +1,11 @@
-var settings = {
-    width: 800,
-    height: 600,
-    renderer: Phaser.AUTO,
-    parent: 'phaser-example'
+var game = new Phaser.Game(
+    settings.width,
+    settings.height,
+    settings.renderer,
+    settings.parent
+);
 
-};
 
-var game = new Phaser.Game(settings);
 
 function preload() {
 
