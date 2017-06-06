@@ -1,0 +1,25 @@
+{
+  "name": "visual-novel",
+  "version": "1.0.0",
+  "description": "to be decided",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yewhral/Basic-visual-novel-game.git"
+  },
+  "keywords": [
+    "add",
+    "later"
+  ],
+  "author": "Michał Zabrzyjewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yewhral/Basic-visual-novel-game/issues"
+  },
+  "homepage": "https://github.com/Yewhral/Basic-visual-novel-game#readme"
+}
