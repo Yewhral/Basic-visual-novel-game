@@ -4,7 +4,7 @@ var clean = require ('gulp-clean');
 var folders = [
     "./configs/*",
     "./fonts/*",
-    "./images/*",
+    "./images/**",
     "./libs/*",
     "./scripts/**",
     "./styles/*",
