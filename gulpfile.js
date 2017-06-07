@@ -6,7 +6,7 @@ var folders = [
     "./fonts/*",
     "./images/*",
     "./libs/*",
-    "./scripts/*",
+    "./scripts/**",
     "./styles/*",
     "./index.html"
 ];

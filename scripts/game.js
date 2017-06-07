@@ -3,26 +3,14 @@ var game = new Phaser.Game(
     settings.width,
     settings.height,
     settings.renderer,
-    'settings.parent',
-    {
-      preload: preload,
-      create: create,
-      update: update
-    });
+    'settings.parent'
+   );
 
 
-
-function preload() {
-
-
-
-}
+game.state.add('load',loadState);
+game.state.add('menu',menuState);
+game.state.add('prologue',prologueState);
 
 
-function create() {
-
-    game.stage.backgroundColor = '#182d3b';
-}
-function update() {
-}
+game.state.start('load');
 
