@@ -10,6 +10,7 @@ var game = new Phaser.Game(
 game.state.add('load',loadState);
 game.state.add('menu',menuState);
 game.state.add('prologue',prologueState);
+game.state.add('info',gameInfo);
 
 
 game.state.start('load');
