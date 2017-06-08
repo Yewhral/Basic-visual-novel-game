@@ -11,6 +11,7 @@ var loadState = {
         game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
 
         game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBase.png', 190, 50);
+        game.load.spritesheet('proceedArrows', 'images/sprites/proceedArrowsSprite.png', 60, 20);
 
     },
 
