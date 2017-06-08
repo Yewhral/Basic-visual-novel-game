@@ -4,12 +4,19 @@ var gameInfo = {
 
         game.add.sprite(0, 0, 'gameInfoBackground');
 
+
+        game.add.button(250,0,'mainMenuStartButton',this.goBack,this,0,1,2);
+
     },
 
     update:function(){
 
 
 
+    },
+
+    goBack:function(){
+        game.state.start('menu');
     }
 
 };
