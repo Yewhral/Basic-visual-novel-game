@@ -8,8 +8,9 @@ var loadState = {
         game.load.image('prologueBackground', 'images/backgrounds/prologue.jpg');
         game.load.image('gameInfoBackground', 'images/backgrounds/info.jpg');
         game.load.image('textBackgroundBig', 'images/backgrounds/textBackgroundBig.png');
+        game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
 
-        game.load.spritesheet('mainMenuStartButton', 'images/sprites/startButton.png', 222, 100);
+        game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBase.png', 190, 50);
 
     },
 
