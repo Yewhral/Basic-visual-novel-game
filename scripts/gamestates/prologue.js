@@ -11,13 +11,10 @@ var  prologueState = {
         var arrows = game.add.sprite(1120, 650, 'proceedArrows');
 
 
-        text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {font: "24px Arial", fill: "#ffffff"});
-        //add to font wordwrap:true, wordwrapwidth:400 for example ^
-        //section for adding text, maybe move to gameconfig
-       // text.setTextBounds(0, 0, 500, 500);
-        text.stroke = '#111111';
-        text.strokeThickness = 4;
-        text.fill = '#ffffff';
+        text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {font: "24px Arial", fill: "#ffffff", wordWrap:true, wordWrapWidth:400});
+        text.stroke = settings.textStroke;
+        text.strokeThickness = settings.textStrokeThickness;
+        text.fill = settings.textFill;
         //text.lineSpacing = 30;
 
 
