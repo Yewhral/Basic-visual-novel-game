@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var clean = require ('gulp-clean');
+var inject = require ('gulp-inject');
 
 var folders = [
     "./configs/*",
@@ -17,8 +18,16 @@ gulp.task('clear', function () {
         .pipe(clean())
 });
 
+gulp.task('injectGamestates', function () {
+    var target = gulp.src('./index.html');
+    var sources = gulp.src(['./scripts/gamestates/**.js'], {read: false});
 
-gulp.task('default', ['clear'],function(){
+    return target.pipe(inject(sources,{relative:true}))
+        .pipe(gulp.dest(''));
+});
+
+
+gulp.task('default', ['injectGamestates','clear'],function(){
     return gulp.src(folders,{base:'./'})
         .pipe(gulp.dest('./build/'))
 
