@@ -2,11 +2,16 @@ var  prologueState = {
 
     create: function () {
 
-        game.add.sprite(0, 0, 'prologueBackground');
+        var background = game.add.sprite(0, 0, 'prologueBackground');
+        background.height = this.game.height;
+        background.width = this.game.width;
 
-        var BackgroundBig = game.add.sprite(40, 59, 'textBackgroundBig');
+
+        var BackgroundBig = game.add.sprite(this.game.width*0.1, this.game.width*0.05, 'textBackgroundBig');
         BackgroundBig.inputEnabled = true;
         BackgroundBig.events.onInputDown.add(this.proceed, this);
+        BackgroundBig.width = this.game.width*0.8;
+        BackgroundBig.height = this.game.height*0.8;
 
         var arrows = game.add.sprite(1120, 650, 'proceedArrows');
 

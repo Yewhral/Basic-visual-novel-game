@@ -2,12 +2,15 @@ var gameInfo = {
 
     create: function () {
 
-        game.add.sprite(0, 0, 'gameInfoBackground');
+        var background = game.add.sprite(0, 0, 'gameInfoBackground');
+        background.height = this.game.height;
+        background.width = this.game.width;
 
-        var smallBackground = game.add.sprite(0, 516, 'textBackgroundSmall');
-
+        var smallBackground = game.add.sprite(0, this.game.height*0.64, 'textBackgroundSmall');
         smallBackground.inputEnabled = true;
         smallBackground.events.onInputDown.add(this.nextLine, this);
+        smallBackground.width = this.game.width;
+        smallBackground.height = this.game.height*0.36;
 
         game.add.button(250, 0, 'mainMenuStartButton', this.goBack, this, 0, 1, 2);
 
