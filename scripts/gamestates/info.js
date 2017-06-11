@@ -23,7 +23,7 @@ var gameInfo = {
 
     nextLine: function () {
         if (lineIndex === textContent.infoScreenText[1].length) {
-            var arrows = game.add.sprite(1160, 716, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
+            var arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
             arrows.animations.add('next');
             arrows.animations.play('next', 3, true);
             return;

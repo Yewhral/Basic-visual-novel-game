@@ -13,10 +13,10 @@ var  prologueState = {
         BackgroundBig.width = this.game.width*0.8;
         BackgroundBig.height = this.game.height*0.8;
 
-        var arrows = game.add.sprite(1120, 650, 'proceedArrows');
+        var arrows = game.add.sprite(0.8*this.game.width, 0.8*this.game.height, 'proceedArrows');
 
 
-        text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {font: "24px Arial", fill: "#ffffff", wordWrap:true, wordWrapWidth:400});
+        text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {font: "24px Arial", fill: "#ffffff", wordWrap:true, wordWrapWidth:this.game.width*0.7});
         text.stroke = settings.textStroke;
         text.strokeThickness = settings.textStrokeThickness;
         text.fill = settings.textFill;
