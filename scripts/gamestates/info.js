@@ -8,21 +8,25 @@ var gameInfo = {
 
         var smallBackground = game.add.sprite(0, this.game.height*0.64, 'textBackgroundSmall');
         smallBackground.inputEnabled = true;
-        smallBackground.events.onInputDown.add(this.nextLine, this);
+        smallBackground.events.onInputDown.add(proceed, this);
         smallBackground.width = this.game.width;
         smallBackground.height = this.game.height*0.36;
 
         game.add.button(250, 0, 'mainMenuStartButton', this.goBack, this, 0, 1, 2);
 
-        text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {font: "24px Arial", fill: "#ffffff"});
-        text.stroke = settings.textStroke;
-        text.strokeThickness = settings.textStrokeThickness;
-        text.fill = settings.textFill;
-        //this.nextLine();                                                                    // Auto text start on scene creation
+        text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
+            font: "Arial",
+            fontSize:settings.textSize,
+            fill: "#ffffff",
+            stroke: settings.textStroke,
+            strokeThickness: settings.textStrokeThickness
+        });
+        this.nextLine();                                                                    // Auto text start on scene creation
     },
 
     nextLine: function () {
         if (lineIndex === textContent.infoScreenText[1].length) {
+            canProceed = true;
             var arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
             arrows.animations.add('next');
             arrows.animations.play('next', 3, true);
@@ -38,5 +42,6 @@ var gameInfo = {
         game.state.start('menu');
         wordIndex = 0;
         lineIndex = 0;
+        canProceed=false;
     }
 };

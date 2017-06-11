@@ -6,7 +6,7 @@ var loadState = {
 
         game.load.image('mainMenuBackground', 'images/backgrounds/mainMenu.jpg');
         game.load.image('prologueBackground', 'images/backgrounds/prologue.jpg');
-        game.load.image('gameInfoBackground', 'images/backgrounds/info.jpg');
+        game.load.image('gameInfoBackground', 'images/backgrounds/city.jpg');
         game.load.image('textBackgroundBig', 'images/backgrounds/textBackgroundBig.png');
         game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
 

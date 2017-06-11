@@ -7,8 +7,6 @@ var game = new Phaser.Game(
    );
 
 
-
-
 var clearText= function(){      // clears the text bubble
     text.text = '';
 };
@@ -22,12 +20,23 @@ var nextWord = function () {
     }
 };
 
+var proceed = function () {
+    if(canProceed==true) {
+        clearText();
+        canProceed=false;
+        this.nextLine();
+    }
+};
+
+var canProceed = false;
+var line = [];
+var wordIndex = 0;
+var lineIndex = 0;
 
 game.state.add('load',loadState);
 game.state.add('menu',menuState);
 game.state.add('prologue',prologueState);
 game.state.add('info',gameInfo);
-
 
 game.state.start('load');
 
