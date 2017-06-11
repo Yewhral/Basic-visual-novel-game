@@ -30,20 +30,8 @@ var gameInfo = {
         }
         line = textContent.infoScreenText[1][lineIndex].split(' ');                           //  Splitting on spaces because word by word showing up
         wordIndex = 0;                                                                        //  Reset the word index to zero (the first word in the line)
-        game.time.events.repeat(settings.wordDelay, line.length, this.nextWord, this);        //  Call the 'nextWord' function once for each word in the line (line.length)
+        game.time.events.repeat(settings.wordDelay, line.length, nextWord, this);        //  Call the 'nextWord' function once for each word in the line (line.length)
         lineIndex++;                                                                          //  Advance to the next line
-    },
-
-    nextWord: function () {
-        text.text = text.text.concat(line[wordIndex] + " ");                                 // Add next word to the string and a ' '
-        wordIndex++;                                                                         // Next word in the line
-        if (wordIndex === line.length) {                                                     // If last word of a line
-            text.text = text.text.concat("\n");                                              // New line
-            game.time.events.add(settings.lineDelay, this.nextLine, this);                   // Get the next line after the lineDelay amount of ms
-        }
-    },
-    clearText: function(){
-      text.text = '';
     },
 
     goBack: function () {

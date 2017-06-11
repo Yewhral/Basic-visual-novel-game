@@ -11,7 +11,6 @@ var settings = {
     smallBgTextY: 0.76*window.innerHeight * window.devicePixelRatio,             // sets starting position of a text on a small text background view
     textStroke:'#111111',
     textStrokeThickness:4,
-    textFill:'#ffffff',
-    big:'60px'
+    textFill:'#ffffff'
 };
 
