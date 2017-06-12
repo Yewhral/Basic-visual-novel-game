@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var clean = require ('gulp-clean');
 var inject = require ('gulp-inject');
 
+// TODO prevent gulp from overwritting source files for safety reasons
+
 var folders = [
     "./configs/*",
     "./fonts/*",

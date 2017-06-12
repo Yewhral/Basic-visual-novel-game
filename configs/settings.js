@@ -21,8 +21,8 @@ var settings = {
 
     bigBgTextX: 0.3*window.innerHeight * window.devicePixelRatio,            // sets starting position of a text on a big background view
     bigBgTextY: 0.16*window.innerHeight * window.devicePixelRatio,             // sets starting position of a text on a small text background view
-    smallBgTextX: 0.18*window.innerWidth * window.devicePixelRatio,             // sets starting position of a text on a small text background view
-    smallBgTextY: 0.76*window.innerHeight * window.devicePixelRatio             // sets starting position of a text on a small text background view
+    smallBgTextX: 0.2*window.innerWidth * window.devicePixelRatio,             // sets starting position of a text on a small text background view
+    smallBgTextY: 0.74*window.innerHeight * window.devicePixelRatio             // sets starting position of a text on a small text background view
 
 };
 

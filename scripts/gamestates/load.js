@@ -7,10 +7,15 @@ var loadState = {
         game.load.image('mainMenuBackground', 'images/backgrounds/mainMenu.jpg');
         game.load.image('prologueBackground', 'images/backgrounds/prologue.jpg');
         game.load.image('gameInfoBackground', 'images/backgrounds/city.jpg');
+        game.load.image('officeBackground', 'images/backgrounds/office.jpg');
         game.load.image('textBackgroundBig', 'images/backgrounds/textBackgroundBig.png');
         game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
 
-        game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBase.png', 190, 50);
+        game.load.spritesheet('placeholderButton', 'images/sprites/buttonBase.png', 190, 50);
+        game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
+        game.load.spritesheet('mainMenuGameButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
+        game.load.spritesheet('mainMenuAuthorButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
+
         game.load.spritesheet('proceedArrows', 'images/sprites/proceedArrowsSprite.png', 60, 20);
 
     },

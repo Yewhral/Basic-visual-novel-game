@@ -1,4 +1,3 @@
-
 var game = new Phaser.Game(
     settings.width,
     settings.height,
@@ -6,9 +5,10 @@ var game = new Phaser.Game(
     'settings.parent'
    );
 
-
-var clearText= function(){      // clears the text bubble
+var clearText = function(){      // clears the text bubble
     text.text = '';
+    wordIndex = 0;
+    lineIndex = 0;
 };
 
 var nextWord = function () {
@@ -24,19 +24,23 @@ var proceed = function () {
     if(canProceed==true) {
         clearText();
         canProceed=false;
+        chatBubbleCounter++;
         this.nextLine();
     }
 };
 
+// TODO move variables to some less global scope
 var canProceed = false;
 var line = [];
 var wordIndex = 0;
 var lineIndex = 0;
+var chatBubbleCounter = 0;
 
 game.state.add('load',loadState);
 game.state.add('menu',menuState);
 game.state.add('prologue',prologueState);
-game.state.add('info',gameInfo);
+game.state.add('author',author);
+game.state.add('gameInfo',gameInfo);
 
 game.state.start('load');
 
