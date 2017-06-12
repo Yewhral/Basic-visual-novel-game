@@ -18,6 +18,37 @@ var menuState = {
       gameDetailsButton.height = 0.1018519*this.game.height;
       authorButton.width = 0.2265625*this.game.width;
       authorButton.height = 0.1018519*this.game.height;
+
+      text = game.add.text(
+          0.215*this.game.width,
+          0.22*this.game.height,
+          'Start the game', {
+          font: "Arial",
+          fontSize:settings.textSize*0.8,
+          fill: "#ffffff",
+          stroke: settings.textStroke,
+          strokeThickness: settings.textStrokeThickness
+      });
+      text = game.add.text(
+          0.22*this.game.width,
+          0.414*this.game.height,
+          'Game details', {
+          font: "Arial",
+          fontSize:settings.textSize*0.8,
+          fill: "#ffffff",
+          stroke: settings.textStroke,
+          strokeThickness: settings.textStrokeThickness
+      });
+      text = game.add.text(
+          0.23*this.game.width,
+          0.61*this.game.height,
+          'Author info', {
+          font: "Arial",
+          fontSize:settings.textSize*0.8,
+          fill: "#ffffff",
+          stroke: settings.textStroke,
+          strokeThickness: settings.textStrokeThickness
+      });
   },
 
   gameStart:function(){

@@ -12,7 +12,7 @@ var author = {
         smallBackground.width = this.game.width;
         smallBackground.height = this.game.height*0.36;
 
-        game.add.button(250, 0, 'placeholderButton', this.goBack, this, 0, 1, 2);
+        game.add.button(0, 0, 'homeButton', this.goBack, this, 1, 0, 1);
 
         text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
             font: "Arial",

@@ -11,7 +11,7 @@ var loadState = {
         game.load.image('textBackgroundBig', 'images/backgrounds/textBackgroundBig.png');
         game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
 
-        game.load.spritesheet('placeholderButton', 'images/sprites/buttonBase.png', 190, 50);
+        game.load.spritesheet('homeButton', 'images/sprites/backButton.png', 190, 50);
         game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
         game.load.spritesheet('mainMenuGameButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
         game.load.spritesheet('mainMenuAuthorButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
