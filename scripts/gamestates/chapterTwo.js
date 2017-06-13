@@ -2,7 +2,7 @@ var chapterTwo = {
 
     create: function () {
 
-        var background = game.add.sprite(0, 0, 'bigCityBackground');
+        var background = game.add.sprite(0, 0, 'officeBackground');
         background.height = this.game.height;
         background.width = this.game.width;
 
@@ -28,6 +28,7 @@ var chapterTwo = {
     },
 
     nextLine: function () {
+        if(chatBubbleCounter==textContent.chapterTwo.length) goToTheNextChapter('chapterThree');
         if (lineIndex === textContent.chapterTwo[chatBubbleCounter].length) {
             canProceed = true;
             var arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed

@@ -29,6 +29,7 @@ var endingBad = {
     },
 
     nextLine: function () {
+        if(chatBubbleCounter==textContent.endingBad.length) goToTheNextChapter('menu');
         if (lineIndex === textContent.endingBad[chatBubbleCounter].length) {
             canProceed = true;
             var arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed TODO remove when not needed

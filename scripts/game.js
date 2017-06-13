@@ -33,9 +33,18 @@ var goBack = function () {
     game.state.start('menu');
     wordIndex = 0;
     lineIndex = 0;
-    chatBubbleCounter =0;
+    chatBubbleCounter = 0;
     line = [];
     canProceed=false;
+};
+
+var goToTheNextChapter = function(x){
+    wordIndex = 0;
+    lineIndex = 0;
+    chatBubbleCounter = 0;
+    line = [];
+    canProceed=false;
+    game.state.start(x);
 };
 
 // TODO move variables to some less global scope
@@ -44,6 +53,7 @@ var line = [];
 var wordIndex = 0;
 var lineIndex = 0;
 var chatBubbleCounter = 0;
+var winningFactor = false;
 
 game.state.add('load',loadState);
 game.state.add('menu',menuState);

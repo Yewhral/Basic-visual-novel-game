@@ -24,8 +24,11 @@ var textContent = {
     ],
     chapterOne:[
         [
+            '',
             'The building should be somewhere around here... Yup! That\'s it. I\'m coming in! ',
-            '*ding-dong!*',
+            '*ding-dong!*'
+        ],
+        [
             'Good morning, I have an appointment with Ms Recruiters in 15 minutes. Am I too early?'
         ],
         [
@@ -38,6 +41,7 @@ var textContent = {
     ],
     chapterTwo:[
         [
+            '',
             'Please sit down, Mr Zabrzyjewski. First, tell us something about your working experience.'
         ],
         [
@@ -62,10 +66,10 @@ var textContent = {
             'During high school and studies I had to learn basics of programming in C++. And I think I can mention that I know some very basics of SQL.'
         ],
         [
-            'Okay, thank you. Technical things aside... tell us about your dream.'
+            'Okay, thank you. Technical things aside... tell us something.. maybe something about your dream.'
         ],
         [
-            'My dream is to travel to Eastern Asia and try all different kinds of cuisine from this part of the World.'
+            'My dream is to travel to Eastern Asia and try all different kinds of cuisine from that part of the World.'
         ],
         [
             'Thank you Mr. Zabrzyjewski. We will contact you when we decide on a final candidate for this position.'
@@ -73,6 +77,7 @@ var textContent = {
     ],
     chapterThree:[
         [
+            '',
             'Okay Mr. Recruiter, we have to decide who to hire. What do you think?'
         ],
         [
@@ -88,10 +93,20 @@ var textContent = {
         //                      "Let's find someone else"
     ],
     endingGood:[
-
+        [
+            '',
+            'GOOD ENDING',
+            " ",
+            ''
+        ]
     ],
     endingBad:[
-
+        [
+            '',
+            'BAD ENDING',
+            " ",
+            ''
+        ]
     ],
 
     infoScreenText:[

@@ -28,6 +28,8 @@ var chapterThree = {
     },
 
     nextLine: function () {
+        if(chatBubbleCounter==textContent.prologueText.length && winningFactor==true) goToTheNextChapter('endingGood');
+        if(chatBubbleCounter==textContent.prologueText.length && winningFactor==false) goToTheNextChapter('endingBad');
         if (lineIndex === textContent.chapterThree[chatBubbleCounter].length) {
             canProceed = true;
             var arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed

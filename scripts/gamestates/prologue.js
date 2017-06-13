@@ -29,6 +29,7 @@ var  prologueState = {
     },
 
     nextLine: function () {
+        if(chatBubbleCounter==textContent.prologueText.length) goToTheNextChapter('chapterOne');
         if (lineIndex === textContent.prologueText[chatBubbleCounter].length) {
             canProceed = true;
             var arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed TODO remove when not needed
@@ -42,7 +43,3 @@ var  prologueState = {
         lineIndex++;                                                                          //  Advance to the next line
     }
 };
-
-
-
-
