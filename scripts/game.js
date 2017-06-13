@@ -48,6 +48,11 @@ var chatBubbleCounter = 0;
 game.state.add('load',loadState);
 game.state.add('menu',menuState);
 game.state.add('prologue',prologueState);
+game.state.add('chapterOne',chapterOne);
+game.state.add('chapterTwo',chapterTwo);
+game.state.add('chapterThree',chapterThree);
+game.state.add('endingGood',endingGood);
+game.state.add('endingBad',endingBad);
 game.state.add('author',author);
 game.state.add('gameInfo',gameInfo);
 

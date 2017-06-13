@@ -18,36 +18,54 @@ var menuState = {
       authorButton.width = 0.2265625*this.game.width;
       authorButton.height = 0.1018519*this.game.height;
 
-      text = game.add.text(
-          0.215*this.game.width,
-          0.22*this.game.height,
+      text = game.add.text(     //TODO refactor this into a function (string, wordwrapWidth, yBoundary as paramters)
+          5,
+          5,
           'Start the game', {
           font: "Arial",
           fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
-          strokeThickness: settings.textStrokeThickness
-      });
+          strokeThickness: settings.textStrokeThickness,
+          wordWrap:true,
+          wordWrapWidth:0.2*this.game.width,
+          align: 'center',
+          boundsAlignH: "center",
+          boundsAlignV: "center"
+          });
+      text.setTextBounds(0.167*this.game.width,0.195*this.game.height,0.2265625*this.game.width,0.1018519*this.game.height);
       text = game.add.text(
-          0.22*this.game.width,
-          0.414*this.game.height,
+          5,
+          5,
           'Game details', {
           font: "Arial",
           fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
-          strokeThickness: settings.textStrokeThickness
+          strokeThickness: settings.textStrokeThickness,
+          wordWrap:true,
+          wordWrapWidth:0.19*this.game.width,
+          align: 'center',
+          boundsAlignH: "center",
+          boundsAlignV: "center"
       });
+      text.setTextBounds(0.167*this.game.width,0.3888*this.game.height,0.2265625*this.game.width,0.1018519*this.game.height);
       text = game.add.text(
-          0.23*this.game.width,
-          0.61*this.game.height,
+          5,
+          5,
           'Author info', {
           font: "Arial",
           fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
-          strokeThickness: settings.textStrokeThickness
+          strokeThickness: settings.textStrokeThickness,
+          wordWrap:true,
+          wordWrapWidth:0.18*this.game.width,
+          align: 'center',
+          boundsAlignH: "center",
+          boundsAlignV: "center"
       });
+      text.setTextBounds(0.167*this.game.width,0.58333*this.game.height,0.2265625*this.game.width,0.1018519*this.game.height);
   },
 
   gameStart:function(){

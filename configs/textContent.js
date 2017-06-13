@@ -13,23 +13,29 @@ var textContent = {
             "",
             'If for some reason you would want to stop reading and go back to main menu feel free to click the button placed near the upper left corner of your screen.' ,
             "",
-            'I wish you a pleasant read!'
+            'I hope you\'ll have fun!'
          ],
         [
             'June 2017',
             "",
-            '...'
+            'After sending couple of applications for job offers Michal got invited for an interview.', 'He did a research about the company, '+
+            'prepared his documents and now he\'s ready to go out to the headquarters to meet a pair of recruiters that had called him few days earlier.'
         ]
     ],
+    chapterOne:[],
+    chapterTwo:[],
+    chapterThree:[],
+    endingGood:[],
+    endingBad:[],
 
     infoScreenText:[
         [
-            'this is a short text for info screen on small window let\'s see how well is will work here and let\'s set up some different options'
-            +'more line because testing needs more than one'
+            'this is a short text for info screen on small window let\'s see how well it will work here and let\'s set up some different options'
+            +' more line because testing needs more than one'
         ],
         [
             'this is another short text for info screen'+
-            'let\'s see how well can I handle this situation and let\'s set up some different options'+
+            'let\'s see how well can I handle this situation and let\'s set up some different options '+
             'global counter of screen clicks maybe? '+
             'reset to zero after every scene switch'
         ]
