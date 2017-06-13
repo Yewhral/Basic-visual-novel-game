@@ -7,26 +7,92 @@ var textContent = {
             'Completing this game won\'t take you more than 5 minutes and during that time I will tell you more about my candidature.',
             "",
             'Click your left mouse button or tap the screen to proceed.'
-         ],
+        ],
         [
             'This is a classic example of a visual novel game where player choices affect the flow of the game and the ending depends on options selected during the game.',
             "",
             'If for some reason you would want to stop reading and go back to main menu feel free to click the button placed near the upper left corner of your screen.' ,
             "",
             'I hope you\'ll have fun!'
-         ],
+        ],
         [
             'June 2017',
             "",
             'After sending couple of applications for job offers Michal got invited for an interview.', 'He did a research about the company, '+
-            'prepared his documents and now he\'s ready to go out to the headquarters to meet a pair of recruiters that had called him few days earlier.'
+        'prepared his documents and now he\'s ready to go out to the headquarters to meet a pair of recruiters that had called him few days earlier.'
         ]
     ],
-    chapterOne:[],
-    chapterTwo:[],
-    chapterThree:[],
-    endingGood:[],
-    endingBad:[],
+    chapterOne:[
+        [
+            'The building should be somewhere around here... Yup! That\'s it. I\'m coming in! ',
+            '*ding-dong!*',
+            'Good morning, I have an appointment with Ms Recruiters in 15 minutes. Am I too early?'
+        ],
+        [
+            'No, not at all, please come in.'
+        ],
+        [
+            'Thank you!',
+            '*doors opening*'
+        ]
+    ],
+    chapterTwo:[
+        [
+            'Please sit down, Mr Zabrzyjewski. First, tell us something about your working experience.'
+        ],
+        [
+            'I spent last 4 months working as a web developer using vanilla JavaScript and learning tricks in CSS(SASS) and HTML(Jade). Sometimes I also had to work with Node.js.'
+        ],
+        [
+            'Your resume mentioned building scripts, can you tell us more about that?'
+        ],
+        [
+            'I feel the most confident about using Grunt, but currently Im working on my own project and Im using Gulp to learn it.'
+        ],
+        [
+            'What\'s this personal project if I can ask?'
+        ],
+        [
+            'It\'s a visual novel game. Nothing big, but I want to try building something and applying responsive web design rules to it.'
+        ],
+        [
+            'I see. Do you know any other technologies?'
+        ],
+        [
+            'During high school and studies I had to learn basics of programming in C++. And I think I can mention that I know some very basics of SQL.'
+        ],
+        [
+            'Okay, thank you. Technical things aside... tell us about your dream.'
+        ],
+        [
+            'My dream is to travel to Eastern Asia and try all different kinds of cuisine from this part of the World.'
+        ],
+        [
+            'Thank you Mr. Zabrzyjewski. We will contact you when we decide on a final candidate for this position.'
+        ]
+    ],
+    chapterThree:[
+        [
+            'Okay Mr. Recruiter, we have to decide who to hire. What do you think?'
+        ],
+        [
+            'Well, we had that guy who made a game, what was his name again? Michal?'
+        ],
+        [
+            'Mr. Zabrzyjewski, yes, I think he is a fitting person.'
+        ],
+        [
+            'Okay, so what do we do?'
+        ]
+        // CHOICE HERE BETWEEN: "Let's contact Michal Zabrzyjewski!"
+        //                      "Let's find someone else"
+    ],
+    endingGood:[
+
+    ],
+    endingBad:[
+
+    ],
 
     infoScreenText:[
         [
