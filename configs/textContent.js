@@ -24,15 +24,13 @@ var textContent = {
 
     infoScreenText:[
         [
-            'this is a short text for info screen on small window',
-            'let\'s see how well is will work here and let\'s set up some different options',
-            'more line because testing needs',
-            'more than one'
+            'this is a short text for info screen on small window let\'s see how well is will work here and let\'s set up some different options'
+            +'more line because testing needs more than one'
         ],
         [
-            'this is another short text for info screen',
-            'let\'s see how well can I handle this situation and let\'s set up some different options',
-            'global counter of screen clicks maybe?',
+            'this is another short text for info screen'+
+            'let\'s see how well can I handle this situation and let\'s set up some different options'+
+            'global counter of screen clicks maybe? '+
             'reset to zero after every scene switch'
         ]
     ]

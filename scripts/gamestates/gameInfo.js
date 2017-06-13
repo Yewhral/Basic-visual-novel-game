@@ -14,13 +14,16 @@ var gameInfo = {
 
         game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 
-        text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
+        text = game.add.text(20, 20, '', {
             font: "Arial",
             fontSize:settings.textSize*0.66+8,
             fill: "#ffffff",
             stroke: settings.textStroke,
-            strokeThickness: settings.textStrokeThickness
+            strokeThickness: settings.textStrokeThickness,
+            wordWrap:true,
+            wordWrapWidth:this.game.width*0.7
         });
+        text.setTextBounds(this.game.width*0.2,this.game.height*0.7);
         this.nextLine();                                                                    // Auto text start on scene creation
     },
 
