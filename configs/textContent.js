@@ -1,25 +1,26 @@
 var textContent = {
     prologueText:[
         [
-            'asd asd sssssss qwe qw e qwr qw uowhewqeiuqwh uwhe iqwe uqhweiu qwh euhwq iuehqwieuh wqieu whuie ',
-            'asd asd ssssqwr qw uowhewqeiuqwh uwhe iqwe uqhweiu qwh euhwq iuehqwieuh wqieu whuie ',
-            ' ',
-            'asd asd sssssss qwe qw e qwr qw uowhewqeiuqwh uwhe iqwe uqhweiu qwh euhwq iuehqwieuh wqieu whuie ',
-            'asd asd sssssss qwe qw e qwr qw  uwhe iqwe uqhweiu qwh euhwq iuehqwieuh wqieu whuie '
+            'Hello!',
+            "",
+            'First of all I\'d like to thank you for showing interest in my application.',
+            'Completing this game won\'t take you more than 5 minutes and during that time I will tell you more about my candidature.',
+            "",
+            'Click your left mouse button or tap the screen to proceed.'
          ],
         [
-            '122222222222333333333333312312eoooooooooooooooooo ooooooooooooooooooooooooooooo qw e qwr312 qw  ' ,
-            '312 3iuqwh u 312wh123 123 12e ' ,
-            'i 2e uqhweiu qwh euhwq ' ,
-            '312 3iuqwh u 312wh123 123 12e ' ,
-            'i 2e uqhweiu qwh euhwq ' ,
-            '312 3iuqwh u 312wh123 123 12e ' ,
-            'i 2e uqhweiu qwh euhwq ' ,
-            '312 3iuqwh u 312wh123 123 12e ' ,
-            'i 2e uqhweiu qwh euhwq ' ,
-            'iuehqwieuh wqieu whuie ',
-            'asd asd sssssss qwe 3qw e qwr q123w  uwhe 2 31 2 uqh312 weiu qwh euhwq iuehqwieuh wqieu whuie 3'
-         ]],
+            'This is a classic example of a visual novel game where player choices affect the flow of the game and the ending depends on options selected during the game.',
+            "",
+            'If for some reason you would want to stop reading and go back to main menu feel free to click the button placed near the upper left corner of your screen.' ,
+            "",
+            'I wish you a pleasant read!'
+         ],
+        [
+            'June 2017',
+            "",
+            '...'
+        ]
+    ],
 
     infoScreenText:[
         [

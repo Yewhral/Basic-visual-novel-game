@@ -13,7 +13,7 @@ var settings = {
     lineDelay: 400,              //delay after each line
     textSize:window.innerWidth/40,
     textStroke:'#111111',
-    textStrokeThickness:window.innerWidth/400,
+    textStrokeThickness:window.innerWidth/300,
     textFill:'#ffffff',
     lineSpacing:'', // TODO set it
 

@@ -14,7 +14,7 @@ var  prologueState = {
 
         game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 
-        text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {
+        text = game.add.text(20,25, '', {
             font: "Arial",
             fontSize:settings.textSize,
             fill: "#ffffff",
@@ -23,6 +23,7 @@ var  prologueState = {
             wordWrap:true,
             wordWrapWidth:this.game.width*0.7
         });
+        text.setTextBounds(this.game.width*0.14, this.game.height*0.15+10,this.game.width*0.68);
         //text.lineSpacing = 30;
         this.nextLine(); // launches next line showing up, I will do this on start of a slide and pause at something
 
