@@ -16,7 +16,7 @@ var gameInfo = {
 
         text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
             font: "Arial",
-            fontSize:settings.textSize*0.86,
+            fontSize:settings.textSize*0.66+8,
             fill: "#ffffff",
             stroke: settings.textStroke,
             strokeThickness: settings.textStrokeThickness

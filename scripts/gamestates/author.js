@@ -16,7 +16,7 @@ var author = {
 
         text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
             font: "Arial",
-            fontSize:settings.textSize*0.66,
+            fontSize:settings.textSize*0.66+8,
             fill: "#ffffff",
             stroke: settings.textStroke,
             strokeThickness: settings.textStrokeThickness

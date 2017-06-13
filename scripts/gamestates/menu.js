@@ -7,7 +7,6 @@ var menuState = {
       background.height = this.game.height;
       background.width = this.game.width;
 
-
       var startButton = game.add.button(0.167*this.game.width,0.195*this.game.height,'mainMenuStartButton',this.gameStart,this,1,2,0);
       var gameDetailsButton = game.add.button(0.167*this.game.width,0.3888*this.game.height,'mainMenuGameButton',this.aboutGame,this,1,2,0);
       var authorButton = game.add.button(0.167*this.game.width,0.58333*this.game.height,'mainMenuAuthorButton',this.aboutAuthor,this,1,2,0);
@@ -24,7 +23,7 @@ var menuState = {
           0.22*this.game.height,
           'Start the game', {
           font: "Arial",
-          fontSize:settings.textSize*0.8,
+          fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
           strokeThickness: settings.textStrokeThickness
@@ -34,7 +33,7 @@ var menuState = {
           0.414*this.game.height,
           'Game details', {
           font: "Arial",
-          fontSize:settings.textSize*0.8,
+          fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
           strokeThickness: settings.textStrokeThickness
@@ -44,7 +43,7 @@ var menuState = {
           0.61*this.game.height,
           'Author info', {
           font: "Arial",
-          fontSize:settings.textSize*0.8,
+          fontSize:settings.textSize*0.6+8,
           fill: "#ffffff",
           stroke: settings.textStroke,
           strokeThickness: settings.textStrokeThickness
@@ -58,6 +57,7 @@ var menuState = {
   aboutAuthor:function(){
     game.state.start('author');
   },
+
   aboutGame:function(){
     game.state.start('gameInfo');
   }
