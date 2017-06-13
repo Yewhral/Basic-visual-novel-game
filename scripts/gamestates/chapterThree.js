@@ -2,7 +2,7 @@ var chapterThree = {
 
     create: function () {
 
-        var background = game.add.sprite(0, 0, 'bigCityBackground');
+        var background = game.add.sprite(0, 0, 'appleBackground');
         background.height = this.game.height;
         background.width = this.game.width;
 
