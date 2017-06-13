@@ -12,7 +12,7 @@ var author = {
         smallBackground.width = this.game.width;
         smallBackground.height = this.game.height*0.36;
 
-        game.add.button(0, 0, 'homeButton', this.goBack, this, 1, 0, 1);
+        game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 
         text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
             font: "Arial",
@@ -36,14 +36,5 @@ var author = {
         wordIndex = 0;                                                                        //  Reset the word index to zero (the first word in the line)
         game.time.events.repeat(settings.wordDelay, line.length, nextWord, this);             //  Call the 'nextWord' function once for each word in the line (line.length)
         lineIndex++;                                                                          //  Advance to the next line
-    },
-
-    goBack: function () {
-        game.state.start('menu');
-        wordIndex = 0;
-        lineIndex = 0;
-        chatBubbleCounter =0;
-        line = [];
-        canProceed=false;
     }
 };

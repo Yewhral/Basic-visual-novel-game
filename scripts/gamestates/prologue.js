@@ -12,6 +12,8 @@ var  prologueState = {
         BackgroundBig.width = this.game.width*0.8;
         BackgroundBig.height = this.game.height*0.8;
 
+        game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
+
         text = game.add.text(settings.bigBgTextX, settings.bigBgTextY, '', {
             font: "Arial",
             fontSize:settings.textSize,

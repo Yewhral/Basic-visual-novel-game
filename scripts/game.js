@@ -29,6 +29,15 @@ var proceed = function () {
     }
 };
 
+var goBack = function () {
+    game.state.start('menu');
+    wordIndex = 0;
+    lineIndex = 0;
+    chatBubbleCounter =0;
+    line = [];
+    canProceed=false;
+};
+
 // TODO move variables to some less global scope
 var canProceed = false;
 var line = [];
