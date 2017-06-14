@@ -47,6 +47,24 @@ let goToTheNextChapter = function(x){
     game.state.start(x);
 };
 
+let startGoodEnding = function(){
+    wordIndex = 0;
+    lineIndex = 0;
+    chatBubbleCounter = 0;
+    line = [];
+    canProceed=false;
+    game.state.start('endingGood');
+};
+
+let startBadEnding = function(){
+    wordIndex = 0;
+    lineIndex = 0;
+    chatBubbleCounter = 0;
+    line = [];
+    canProceed=false;
+    game.state.start('endingBad');
+};
+
 function hideSprite(sprite){
     sprite.alpha = 0;
 }
@@ -60,7 +78,6 @@ let line = [];
 let wordIndex = 0;
 let lineIndex = 0;
 let chatBubbleCounter = 0;
-let winningFactor = false;
 
 game.state.add('load',loadState);
 game.state.add('menu',menuState);

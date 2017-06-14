@@ -12,7 +12,7 @@ let endingBad = {
         BackgroundBig.width = this.game.width*0.8;
         BackgroundBig.height = this.game.height*0.8;
 
-        arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed TODO remove when not needed
+        arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');
         arrows.animations.add('next');
         arrows.animations.play('next', 3, true);
 

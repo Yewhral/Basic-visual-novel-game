@@ -37,7 +37,7 @@ let endingGood = {
         if(chatBubbleCounter==textContent.endingGood.length) goToTheNextChapter('menu');
         if (lineIndex === textContent.endingGood[chatBubbleCounter].length) {
             canProceed = true;
-           showSprite(arrows);
+            showSprite(arrows);
             return;
         }
         line = textContent.endingGood[chatBubbleCounter][lineIndex].split(' ');                             //  Splitting on spaces because word by word showing up

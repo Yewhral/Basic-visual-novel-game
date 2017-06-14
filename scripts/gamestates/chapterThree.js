@@ -16,6 +16,23 @@ let chapterThree = {
         arrows.animations.add('next');
         arrows.animations.play('next', 3,true);
 
+
+        choiceGood = game.add.sprite(this.game.width*0.2, this.game.height*0.15, 'textBackgroundBig');
+        choiceGood.inputEnabled = false;
+        choiceGood.events.onInputDown.add(startGoodEnding, this);
+        choiceGood.width = this.game.width*0.6;
+        choiceGood.height = this.game.height*0.2;
+
+        choiceBad = game.add.sprite(this.game.width*0.2, this.game.height*0.4, 'textBackgroundBig');
+        choiceBad.inputEnabled = false;
+        choiceBad.events.onInputDown.add(startBadEnding, this);
+        choiceBad.width = this.game.width*0.6;
+        choiceBad.height = this.game.height*0.2;
+
+
+        choiceGood.alpha = 0;
+        choiceBad.alpha = 0;
+
         recruiterF = game.add.sprite(0,game.height*0.68, 'recruiterF');
         recruiterM = game.add.sprite(0,game.height*0.68, 'recruiterM');
 
@@ -36,8 +53,13 @@ let chapterThree = {
 
     nextLine: function () {
         this.selectSprite();
-        if(chatBubbleCounter==textContent.chapterThree.length && winningFactor==true) goToTheNextChapter('endingGood');
-        if(chatBubbleCounter==textContent.chapterThree.length && winningFactor==false) goToTheNextChapter('endingBad');
+         if(chatBubbleCounter==textContent.chapterThree.length) {
+             choiceGood.inputEnabled = true;
+             choiceGood.alpha = 1;
+             choiceBad.inputEnabled = true;
+             choiceBad.alpha = 1;
+             return;
+         }
         if (lineIndex === textContent.chapterThree[chatBubbleCounter].length) {
             showSprite(arrows);
             canProceed = true;

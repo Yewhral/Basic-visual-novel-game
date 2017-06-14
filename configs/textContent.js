@@ -66,7 +66,7 @@ let textContent = {
             'During high school and studies I had to learn basics of programming in C++. And I think I can mention that I know some very basics of SQL.'
         ],
         [
-            'Okay, thank you. Technical things aside... tell us something.. maybe something about your dream.'
+            'Okay, thank you. Technical things aside... maybe tell us about your dream.'
         ],
         [
             'My dream is to travel to Eastern Asia and try all different kinds of cuisine from that part of the World.'
