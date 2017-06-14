@@ -1,16 +1,20 @@
-var endingBad = {
+let endingBad = {
 
     create: function () {
 
-        var background = game.add.sprite(0, 0, 'prologueBackground');
+        let background = game.add.sprite(0, 0, 'prologueBackground');
         background.height = this.game.height;
         background.width = this.game.width;
 
-        var BackgroundBig = game.add.sprite(this.game.width*0.1, this.game.width*0.05, 'textBackgroundBig');
+        let BackgroundBig = game.add.sprite(this.game.width*0.1, this.game.width*0.05, 'textBackgroundBig');
         BackgroundBig.inputEnabled = true;
         BackgroundBig.events.onInputDown.add(proceed, this);
         BackgroundBig.width = this.game.width*0.8;
         BackgroundBig.height = this.game.height*0.8;
+
+        arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed TODO remove when not needed
+        arrows.animations.add('next');
+        arrows.animations.play('next', 3, true);
 
         game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 
@@ -25,16 +29,14 @@ var endingBad = {
         });
         text.setTextBounds(this.game.width*0.14, this.game.height*0.15+10,this.game.width*0.68);
         this.nextLine(); // launches next line showing up, I will do this on start of a slide and pause at something
-
     },
 
     nextLine: function () {
+        hideSprite(arrows);
         if(chatBubbleCounter==textContent.endingBad.length) goToTheNextChapter('menu');
         if (lineIndex === textContent.endingBad[chatBubbleCounter].length) {
             canProceed = true;
-            var arrows = game.add.sprite(this.game.width * 0.8, this.game.height * 0.8, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed TODO remove when not needed
-            arrows.animations.add('next');
-            arrows.animations.play('next', 3, true);
+            showSprite(arrows);
             return;
         }
         line = textContent.endingBad[chatBubbleCounter][lineIndex].split(' ');                             //  Splitting on spaces because word by word showing up

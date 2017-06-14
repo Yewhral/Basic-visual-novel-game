@@ -1,17 +1,17 @@
-var game = new Phaser.Game(
+let game = new Phaser.Game(
     settings.width,
     settings.height,
     settings.renderer,
     'settings.parent'
    );
 
-var clearText = function(){      // clears the text bubble
+let clearText = function(){      // clears the text bubble
     text.text = '';
     wordIndex = 0;
     lineIndex = 0;
 };
 
-var nextWord = function () {
+let nextWord = function () {
     text.text = text.text.concat(line[wordIndex] + " ");                                 // Add next word to the string and a ' '
     wordIndex++;                                                                         // Next word in the line
     if (wordIndex === line.length) {                                                     // If last word of a line
@@ -20,7 +20,7 @@ var nextWord = function () {
     }
 };
 
-var proceed = function () {
+let proceed = function () {
     if(canProceed==true) {
         clearText();
         canProceed=false;
@@ -29,7 +29,7 @@ var proceed = function () {
     }
 };
 
-var goBack = function () {
+let goBack = function () {
     game.state.start('menu');
     wordIndex = 0;
     lineIndex = 0;
@@ -38,7 +38,7 @@ var goBack = function () {
     canProceed=false;
 };
 
-var goToTheNextChapter = function(x){
+let goToTheNextChapter = function(x){
     wordIndex = 0;
     lineIndex = 0;
     chatBubbleCounter = 0;
@@ -47,13 +47,20 @@ var goToTheNextChapter = function(x){
     game.state.start(x);
 };
 
+function hideSprite(sprite){
+    sprite.alpha = 0;
+}
+function showSprite(sprite){
+    sprite.alpha=1;
+}
+
 // TODO move variables to some less global scope
-var canProceed = false;
-var line = [];
-var wordIndex = 0;
-var lineIndex = 0;
-var chatBubbleCounter = 0;
-var winningFactor = false;
+let canProceed = false;
+let line = [];
+let wordIndex = 0;
+let lineIndex = 0;
+let chatBubbleCounter = 0;
+let winningFactor = false;
 
 game.state.add('load',loadState);
 game.state.add('menu',menuState);

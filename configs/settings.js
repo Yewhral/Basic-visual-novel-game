@@ -1,4 +1,4 @@
-var settings = {
+let settings = {
 
     // main game display settings
 

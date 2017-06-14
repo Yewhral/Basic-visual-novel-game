@@ -1,4 +1,4 @@
-var loadState = {
+let loadState = {
 
     preload:function(){
 
@@ -11,11 +11,12 @@ var loadState = {
         game.load.image('appleBackground', 'images/backgrounds/officeApple.jpg');
         game.load.image('textBackgroundBig', 'images/backgrounds/textBackgroundBig.png');
         game.load.image('textBackgroundSmall', 'images/backgrounds/textBackgroundSmall.png');
+        game.load.image('zabrza', 'images/sprites/testSprite.png');
+        game.load.image('recruiterF', 'images/sprites/testSprite2.png');
+        game.load.image('recruiterM', 'images/sprites/testSprite3.png');
 
         game.load.spritesheet('homeButton', 'images/sprites/backButton.png', 190, 50);
-        game.load.spritesheet('mainMenuStartButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
-        game.load.spritesheet('mainMenuGameButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
-        game.load.spritesheet('mainMenuAuthorButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
+        game.load.spritesheet('mainMenuButton', 'images/sprites/buttonBaseRedone.png', 435, 110);
 
         game.load.spritesheet('proceedArrows', 'images/sprites/proceedArrowsSprite.png', 60, 20);
 

@@ -1,12 +1,12 @@
-var gameInfo = {
+let gameInfo = {
 
     create: function () {
 
-        var background = game.add.sprite(0, 0, 'officeBackground');
+        let background = game.add.sprite(0, 0, 'officeBackground');
         background.height = this.game.height;
         background.width = this.game.width;
 
-        var smallBackground = game.add.sprite(0, this.game.height*0.64, 'textBackgroundSmall');
+        let smallBackground = game.add.sprite(0, this.game.height*0.64, 'textBackgroundSmall');
         smallBackground.inputEnabled = true;
         smallBackground.events.onInputDown.add(proceed, this);
         smallBackground.width = this.game.width;

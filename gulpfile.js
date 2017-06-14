@@ -1,10 +1,10 @@
-var gulp = require('gulp');
-var clean = require ('gulp-clean');
-var inject = require ('gulp-inject');
+let gulp = require('gulp');
+let clean = require ('gulp-clean');
+let inject = require ('gulp-inject');
 
 // TODO prevent gulp from overwritting source files for safety reasons
 
-var folders = [
+let folders = [
     "./configs/*",
     "./fonts/*",
     "./images/**",
@@ -21,8 +21,8 @@ gulp.task('clear', function () {
 });
 
 gulp.task('injectGamestates', function () {
-    var target = gulp.src('./index.html');
-    var sources = gulp.src(['./scripts/gamestates/**.js'], {read: false});
+    let target = gulp.src('./index.html');
+    let sources = gulp.src(['./scripts/gamestates/**.js'], {read: false});
 
     return target.pipe(inject(sources,{relative:true}))
         .pipe(gulp.dest(''));

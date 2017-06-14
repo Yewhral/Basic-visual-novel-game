@@ -1,4 +1,4 @@
-var textContent = {
+let textContent = {
     prologueText:[
         [
             'Hello!',
@@ -16,9 +16,9 @@ var textContent = {
             'I hope you\'ll have fun!'
         ],
         [
-            'June 2017',
+            ' - June 2017 - ',
             "",
-            'After sending couple of applications for job offers Michal got invited for an interview.', 'He did a research about the company, '+
+            'After sending a couple of job applications Michal got invited for an interview.', 'He did a research about the company, '+
         'prepared his documents and now he\'s ready to go out to the headquarters to meet a pair of recruiters that had called him few days earlier.'
         ]
     ],
@@ -29,7 +29,7 @@ var textContent = {
             '*ding-dong!*'
         ],
         [
-            'Good morning, I have an appointment with Ms Recruiters in 15 minutes. Am I too early?'
+            'Good morning, I have an appointment with Mrs. Recruiter and Mr. Recruiter in 15 minutes. Am I too early?'
         ],
         [
             'No, not at all, please come in.'
@@ -51,10 +51,10 @@ var textContent = {
             'Your resume mentioned building scripts, can you tell us more about that?'
         ],
         [
-            'I feel the most confident about using Grunt, but currently Im working on my own project and Im using Gulp to learn it.'
+            'I feel most confident about using Grunt, but currently I\'m working on my own project and I\'m using Gulp to learn it.'
         ],
         [
-            'What\'s this personal project if I can ask?'
+            'What\'s this personal project if I may ask?'
         ],
         [
             'It\'s a visual novel game. Nothing big, but I want to try building something and applying responsive web design rules to it.'
@@ -77,7 +77,11 @@ var textContent = {
     ],
     chapterThree:[
         [
-            '',
+            " ",
+            ' - Few days later - ',
+        ],
+
+        [
             'Okay Mr. Recruiter, we have to decide who to hire. What do you think?'
         ],
         [
@@ -87,25 +91,37 @@ var textContent = {
             'Mr. Zabrzyjewski, yes, I think he is a fitting person.'
         ],
         [
-            'Okay, so what do we do?'
+            'He seems to be at the beginning of his career, but I think it may be wise to give him a chance.'
+        ],
+        [
+            'Okay, so what should I do?'
         ]
         // CHOICE HERE BETWEEN: "Let's contact Michal Zabrzyjewski!"
         //                      "Let's find someone else"
     ],
     endingGood:[
         [
-            '',
-            'GOOD ENDING',
             " ",
-            ''
-        ]
+            ' - GOOD ENDING - ',
+            " ",
+            'Soon after contacting Michal by sending him an email on zabrzyjewski@gmail.com he started working for your company and you noticed a lot of profits after hiring him! That was a good move!'
+        ],
+        [
+            " ",
+            'Thanks for playing till the end! Make sure to check other options from main menu as well!'
+]
     ],
     endingBad:[
         [
-            '',
-            'BAD ENDING',
             " ",
-            ''
+            ' - BAD ENDING - ',
+            " ",
+            'Because you decided not to invite Michal for further talks he started working for another company. '+
+            'If you happen to change your mind please contact him by sending an email to zabrzyjewski@gmail.com'
+        ],
+        [
+            " ",
+            'Thanks for playing till the end! Make sure to check other options from main menu as well!'
         ]
     ],
 
