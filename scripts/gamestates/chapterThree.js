@@ -16,7 +16,6 @@ let chapterThree = {
         arrows.animations.add('next');
         arrows.animations.play('next', 3,true);
 
-
         choiceGood = game.add.sprite(this.game.width*0.2, this.game.height*0.15, 'textBackgroundBig');
         choiceGood.inputEnabled = false;
         choiceGood.events.onInputDown.add(startGoodEnding, this);
@@ -29,9 +28,31 @@ let chapterThree = {
         choiceBad.width = this.game.width*0.6;
         choiceBad.height = this.game.height*0.2;
 
-
         choiceGood.alpha = 0;
         choiceBad.alpha = 0;
+
+        textChoiceGood = game.add.text(0.4*this.game.width,0.175*this.game.height,
+            'Contact Michal Zabrzyjewski', {
+                font: "Arial",
+                fontSize:settings.textSize*0.6+10,
+                fill: "#ffffff",
+                stroke: settings.textStroke,
+                strokeThickness: settings.textStrokeThickness,
+                wordWrap:true,
+                wordWrapWidth:0.5*this.game.width,
+            });
+        textChoiceBad = game.add.text(0.4*this.game.width,0.5*this.game.height,
+            'Contact someone else', {
+                font: "Arial",
+                fontSize:settings.textSize*0.6+10,
+                fill: "#ffffff",
+                stroke: settings.textStroke,
+                strokeThickness: settings.textStrokeThickness,
+                wordWrap:true,
+                wordWrapWidth:0.5*this.game.width,
+            });
+        textChoiceGood.alpha = 0;
+        textChoiceBad.alpha = 0;
 
         recruiterF = game.add.sprite(0,game.height*0.68, 'recruiterF');
         recruiterM = game.add.sprite(0,game.height*0.68, 'recruiterM');
@@ -55,9 +76,11 @@ let chapterThree = {
         this.selectSprite();
          if(chatBubbleCounter==textContent.chapterThree.length) {
              choiceGood.inputEnabled = true;
-             choiceGood.alpha = 1;
+             choiceGood.alpha = 0.8;
              choiceBad.inputEnabled = true;
-             choiceBad.alpha = 1;
+             choiceBad.alpha = 0.8;
+             textChoiceGood.alpha = 1;
+             textChoiceBad.alpha = 1;
              return;
          }
         if (lineIndex === textContent.chapterThree[chatBubbleCounter].length) {
