@@ -95,7 +95,6 @@ let chapterThree = {
         if (lineIndex === textContent.chapterThree[chatBubbleCounter].length) {
             showSprite(arrows);
             canProceed = true;
-            showSprite(arrows);
             return;
         }
         line = textContent.chapterThree[chatBubbleCounter][lineIndex].split(' ');           //  Splitting on spaces because word by word showing up

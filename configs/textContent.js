@@ -1,6 +1,7 @@
 let textContent = {
     prologueText:[
         [
+            '',
             'Hello!',
             "",
             'First of all I\'d like to thank you for showing interest in my application.',
@@ -127,15 +128,43 @@ let textContent = {
 
     infoScreenText:[
         [
-            'this is a short text for info screen on small window let\'s see how well it will work here and let\'s set up some different options'
-            +' more line because testing needs more than one'
+            ' Some details about this game: '
         ],
         [
-            'this is another short text for info screen'+
-            'let\'s see how well can I handle this situation and let\'s set up some different options '+
-            'global counter of screen clicks maybe? '+
-            'reset to zero after every scene switch'
+            "This game was written in JavaScript with Phaser library. It was my first project where I was using Gulp.js and my very first try on applying responsive web design."
+        ],
+        [
+            'All backgrounds used are free stock photos that I adjusted to my needs.'
+        ],
+        [
+            'If you are curious you can see the code on my GitHub repository at github.com/Yewhral/Basic-visual-novel-game. Please let me know if you have any suggestions!'
+        ],
+        [
+            'And once again - thanks for your interest!'
         ]
+    ],
+
+    authorText:[
+        [
+            ' My skills:'
+        ],
+        [
+            " For now I am specializing in front-end technologies: JavaScript, HTML5 and CSS."
+
+        ],
+        [
+            " One day I would like to become a true fullstack developer - my experiences with Node.js were very positive so far.",
+        ],
+        [
+            'I started learning programming from C++ and maybe in the future I\'d like to return to it. Or I will learn C# if there will be a need for that.'
+        ],
+        [
+            'Seeing how important data management can be, I learned some basics of SQL on my own.'
+        ],
+        [
+            'If you would like to know more, don\'t hesitate and send me an email!'
+        ]
+
     ]
 
 

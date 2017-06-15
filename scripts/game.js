@@ -30,12 +30,12 @@ let proceed = function () {
 };
 
 let goBack = function () {
-    game.state.start('menu');
     wordIndex = 0;
     lineIndex = 0;
     chatBubbleCounter = 0;
     line = [];
     canProceed=false;
+    game.state.start('menu');
 };
 
 let goToTheNextChapter = function(x){

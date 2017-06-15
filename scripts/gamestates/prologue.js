@@ -24,7 +24,7 @@ let  prologueState = {
 
         text = game.add.text(20,25, '', {
             font: "Arial",
-            fontSize:settings.textSize,
+            fontSize:settings.textSize*0.92,
             fill: "#ffffff",
             stroke: settings.textStroke,
             strokeThickness: settings.textStrokeThickness,
