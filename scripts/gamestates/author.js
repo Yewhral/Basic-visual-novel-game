@@ -15,8 +15,12 @@ let author = {
         let arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
         arrows.animations.add('next');
         arrows.animations.play('next', 3,true);
+        arrows.height = 0.0186*this.game.height;
+        arrows.width = 0.0521*this.game.width;
 
-        game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
+        let backer = game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
+        backer.width = 0.09895*this.game.width;
+        backer.height = 0.0463*this.game.height;
 
         text = game.add.text(settings.smallBgTextX, settings.smallBgTextY, '', {
             font: "Arial",

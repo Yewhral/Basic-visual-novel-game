@@ -9,8 +9,8 @@ let settings = {
 
     // text settings
 
-    wordDelay: 1.20,             //word speed
-    lineDelay: 4.00,              //delay after each line
+    wordDelay: 42.0,             //word speed
+    lineDelay: 80.0,              //delay after each line
     textSize:window.innerWidth/40,
     textStroke:'#000000',
     textStrokeThickness:3+window.innerWidth/400,

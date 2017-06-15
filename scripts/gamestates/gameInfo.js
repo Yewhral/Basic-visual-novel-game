@@ -12,7 +12,9 @@ let gameInfo = {
         smallBackground.width = this.game.width;
         smallBackground.height = this.game.height*0.36;
 
-        game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
+        let backer = game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
+        backer.width = 0.09895*this.game.width;
+        backer.height = 0.0463*this.game.height;
 
         text = game.add.text(20, 20, '', {
             font: "Arial",
@@ -30,7 +32,7 @@ let gameInfo = {
     nextLine: function () {
         if (lineIndex === textContent.infoScreenText[chatBubbleCounter].length) {
             canProceed = true;
-            var arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
+            let arrows = game.add.sprite(this.game.width*0.9, this.game.height*0.94, 'proceedArrows');                         // Adds arrows and animation when whole text is displayed
             arrows.animations.add('next');
             arrows.animations.play('next', 3,true);
             return;
