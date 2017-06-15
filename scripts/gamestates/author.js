@@ -5,10 +5,10 @@ let author = {
         let background = game.add.sprite(0, 0, 'japanese');
         background.height = this.game.height;
         background.width = this.game.width;
+        background.inputEnabled = true;
+        background.events.onInputDown.add(proceed, this);
 
         let smallBackground = game.add.sprite(0, this.game.height*0.64, 'textBackgroundSmall');
-        smallBackground.inputEnabled = true;
-        smallBackground.events.onInputDown.add(proceed, this);
         smallBackground.width = this.game.width;
         smallBackground.height = this.game.height*0.36;
 
