@@ -9,11 +9,11 @@ let settings = {
 
     // text settings
 
-    wordDelay: 120,             //word speed
-    lineDelay: 400,              //delay after each line
+    wordDelay: 1.20,             //word speed
+    lineDelay: 4.00,              //delay after each line
     textSize:window.innerWidth/40,
-    textStroke:'#111111',
-    textStrokeThickness:window.innerWidth/300,
+    textStroke:'#000000',
+    textStrokeThickness:3+window.innerWidth/400,
     textFill:'#ffffff',
     lineSpacing:'', // TODO set it
 

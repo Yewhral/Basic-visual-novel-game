@@ -20,13 +20,13 @@ let chapterThree = {
         choiceGood.inputEnabled = false;
         choiceGood.events.onInputDown.add(startGoodEnding, this);
         choiceGood.width = this.game.width*0.6;
-        choiceGood.height = this.game.height*0.2;
+        choiceGood.height = this.game.height*0.15;
 
         choiceBad = game.add.sprite(this.game.width*0.2, this.game.height*0.4, 'textBackgroundBig');
         choiceBad.inputEnabled = false;
         choiceBad.events.onInputDown.add(startBadEnding, this);
         choiceBad.width = this.game.width*0.6;
-        choiceBad.height = this.game.height*0.2;
+        choiceBad.height = this.game.height*0.15;
 
         choiceGood.alpha = 0;
         choiceBad.alpha = 0;
@@ -54,8 +54,13 @@ let chapterThree = {
         textChoiceGood.alpha = 0;
         textChoiceBad.alpha = 0;
 
-        recruiterF = game.add.sprite(0,game.height*0.68, 'recruiterF');
-        recruiterM = game.add.sprite(0,game.height*0.68, 'recruiterM');
+        recruiterF = game.add.sprite(game.width*0.005,game.height*0.7, 'recruiterF');
+        recruiterF.width = game.width*0.202;
+        recruiterF.height = game.height*0.31851851;
+
+        recruiterM = game.add.sprite(game.width*0.005,game.height*0.7, 'recruiterM');
+        recruiterM.width = game.width*0.202;
+        recruiterM.height = game.height*0.31851;
 
         game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 

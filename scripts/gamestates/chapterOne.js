@@ -16,8 +16,11 @@ let chapterOne = {
         arrows.animations.add('next');
         arrows.animations.play('next', 3,true);
 
-        zabrza = game.add.sprite(0,game.height*0.68, 'zabrza');
-        recruiterF = game.add.sprite(0,game.height*0.68, 'recruiterF');
+        zabrza = game.add.sprite(game.width*0.005,game.height*0.7, 'zabrza');
+
+        recruiterF = game.add.sprite(game.width*0.005,game.height*0.7, 'recruiterF');
+        recruiterF.width = game.width*0.202;
+        recruiterF.height = game.height*0.31851851;
 
         game.add.button(0, 5, 'homeButton', goBack, this, 1, 0, 1);
 
