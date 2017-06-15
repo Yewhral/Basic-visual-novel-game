@@ -34,7 +34,7 @@ let chapterThree = {
         choiceBad.alpha = 0;
 
         textChoiceGood = game.add.text(0.4*this.game.width,0.175*this.game.height,
-            'Contact Michal Zabrzyjewski', {
+            'Let\'s contact Michal Zabrzyjewski!', {
                 font: "Arial",
                 fontSize:settings.textSize*0.6+10,
                 fill: "#ffffff",
@@ -44,7 +44,7 @@ let chapterThree = {
                 wordWrapWidth:0.5*this.game.width,
             });
         textChoiceBad = game.add.text(0.4*this.game.width,0.5*this.game.height,
-            'Contact someone else', {
+            'Let\'s find someone else', {
                 font: "Arial",
                 fontSize:settings.textSize*0.6+10,
                 fill: "#ffffff",

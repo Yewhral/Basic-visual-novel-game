@@ -1,7 +1,6 @@
 let textContent = {
     prologueText:[
         [
-            '',
             'Hello!',
             "",
             'First of all I\'d like to thank you for showing interest in my application.',
@@ -97,8 +96,6 @@ let textContent = {
         [
             'Okay, so what should I do?'
         ]
-        // CHOICE HERE BETWEEN: "Let's contact Michal Zabrzyjewski!"
-        //                      "Let's find someone else"
     ],
     endingGood:[
         [
@@ -128,7 +125,7 @@ let textContent = {
 
     infoScreenText:[
         [
-            ' Some details about this game: '
+            'Some details about this game: '
         ],
         [
             "This game was written in JavaScript with Phaser library. It was my first project where I was using Gulp.js and my very first try on applying responsive web design."
@@ -146,23 +143,23 @@ let textContent = {
 
     authorText:[
         [
-            ' My skills:'
+            'My skills:'
         ],
         [
-            " For now I am specializing in front-end technologies: JavaScript, HTML5 and CSS."
-
+            "For now I am specializing in front-end technologies: JavaScript, HTML5 and CSS3."
         ],
         [
-            " One day I would like to become a true fullstack developer - my experiences with Node.js were very positive so far.",
+            "One day I would like to become a true fullstack developer - my experiences with Node.js were very positive so far.",
         ],
         [
-            'I started learning programming from C++ and maybe in the future I\'d like to return to it. Or I will learn C# if there will be a need for that.'
+            'I started learning programming from C++ language and in the future I may return to it. Or I will learn C# if there will be a need for that.'
         ],
         [
             'Seeing how important data management can be, I learned some basics of SQL on my own.'
         ],
         [
-            'If you would like to know more, don\'t hesitate and send me an email!'
+            'If you would like to know more, don\'t hesitate and send me an email!',
+            'zabrzyjewski@gmail.com'
         ]
 
     ]
