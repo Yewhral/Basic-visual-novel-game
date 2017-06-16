@@ -33,7 +33,7 @@ let chapterThree = {
         choiceGood.alpha = 0;
         choiceBad.alpha = 0;
 
-        textChoiceGood = game.add.text(0.4*this.game.width,0.175*this.game.height,
+        textChoiceGood = game.add.text(5,5,
             'Let\'s contact Michal Zabrzyjewski!', {
                 font: "Arial",
                 fontSize:settings.textSize*0.6+10,
@@ -43,7 +43,8 @@ let chapterThree = {
                 wordWrap:true,
                 wordWrapWidth:0.5*this.game.width,
             });
-        textChoiceBad = game.add.text(0.4*this.game.width,0.5*this.game.height,
+        textChoiceGood.setTextBounds(0.34*this.game.width, 0.176*this.game.height);
+        textChoiceBad = game.add.text(5,5,
             'Let\'s find someone else', {
                 font: "Arial",
                 fontSize:settings.textSize*0.6+10,
@@ -53,6 +54,8 @@ let chapterThree = {
                 wordWrap:true,
                 wordWrapWidth:0.5*this.game.width,
             });
+        textChoiceBad.setTextBounds(0.38*this.game.width,0.445*this.game.height);
+
         textChoiceGood.alpha = 0;
         textChoiceBad.alpha = 0;
 
