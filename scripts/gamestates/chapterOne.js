@@ -19,6 +19,9 @@ let chapterOne = {
         arrows.width = 0.0521*this.game.width;
 
         zabrza = game.add.sprite(game.width*0.005,game.height*0.7, 'zabrza');
+        zabrza.width = this.game.width*0.202;
+        zabrza.height = this.game.height*0.31851851;
+
 
         recruiterF = game.add.sprite(game.width*0.005,game.height*0.7, 'recruiterF');
         recruiterF.width = this.game.width*0.202;
