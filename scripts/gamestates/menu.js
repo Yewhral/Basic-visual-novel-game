@@ -1,6 +1,5 @@
 let menuState = {
 
-
   create:function(){
 
       let background = game.add.sprite(0, 0, 'mainMenuBackground');
