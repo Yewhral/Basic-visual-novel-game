@@ -1,8 +1,13 @@
-let gulp = require('gulp');
-let clean = require ('gulp-clean');
-let concat = require('gulp-concat');
-let inject = require ('gulp-inject'); // for dev version
-let cleanCSS = require('gulp-clean-css');
+const gulp = require('gulp');
+const clean = require ('gulp-clean');
+const concat = require('gulp-concat');
+const inject = require ('gulp-inject'); // for dev version
+const cleanCSS = require('gulp-clean-css');
+const babel = require('gulp-babel');
+
+
+const uglify = require('gulp-uglify');
+const pump = require('pump');
 
 let folders = [
     "./fonts/*",
@@ -12,6 +17,7 @@ let folders = [
     "./styles/*",
     "./index.html"
 ];
+
 
 gulp.task('clear', function () {
     return gulp.src('./build')
@@ -44,11 +50,30 @@ gulp.task('concatOptim',function(){
         .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('optim',['minify-css', 'concatOptim'],function(){
-
+gulp.task('babelize', () => {
+    gulp.src('build/scripts/gamestates.min.js')
+        .pipe(babel({
+            presets: ['es2015-without-strict']
+        }))
+        .pipe(gulp.dest('build/scripts/'));
 });
 
 gulp.task('default', ['clear', 'concatBuild'],function(){       // kind of dev build
     return gulp.src(folders,{base:'./'})
         .pipe(gulp.dest('./build/'))
 });
+
+gulp.task('optim',['minify-css', 'concatOptim', 'babelize'],function(){
+
+});
+
+gulp.task('ugly', function (cb) {
+    pump([
+            gulp.src('build/scripts/gamestates.min.js'),
+            uglify(),
+            gulp.dest('build/scripts')
+        ],
+        cb
+    );
+});
+
