@@ -25,7 +25,7 @@ let loadState = {
     },
 
     create:function(){
-
+        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         game.state.start('menu');
 
     }

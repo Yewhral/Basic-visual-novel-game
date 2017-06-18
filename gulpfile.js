@@ -44,7 +44,7 @@ gulp.task('concatOptim',function(){
         .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('optimize',['minify-css', 'concatOptim'],function(){
+gulp.task('optim',['minify-css', 'concatOptim'],function(){
 
 });
 
