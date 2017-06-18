@@ -4,7 +4,7 @@ let settings = {
 
     width: window.innerWidth * window.devicePixelRatio,                //game width
     height: window.innerHeight * window.devicePixelRatio,                //game height
-    renderer: Phaser.AUTO,
+    renderer: Phaser.CANVAS,
     parent: 'phaser-example',
 
     // text settings

@@ -2,10 +2,9 @@ let gulp = require('gulp');
 let clean = require ('gulp-clean');
 let concat = require('gulp-concat');
 let inject = require ('gulp-inject'); // for dev version
-
+let cleanCSS = require('gulp-clean-css');
 
 let folders = [
-    "./configs/*",
     "./fonts/*",
     "./images/**",
     "./libs/*",
@@ -22,7 +21,7 @@ gulp.task('clear', function () {
 gulp.task('concatBuild', function(){
     return gulp.src('./scripts/gamestates/**')
         .pipe(concat('gamestates.min.js'))
-        .pipe(gulp.dest('build/scripts/gamestates'));
+        .pipe(gulp.dest('build/scripts'));
 });
 
 gulp.task('injectGamestates', function () {     // for dev version
@@ -33,8 +32,23 @@ gulp.task('injectGamestates', function () {     // for dev version
         .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['clear', 'concatBuild'],function(){
+gulp.task('minify-css', () => {
+    return gulp.src('styles/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('build/styles'));
+});
+
+gulp.task('concatOptim',function(){
+    return gulp.src('configs/**')
+        .pipe(concat('configs.min.js'))
+        .pipe(gulp.dest('build/scripts'));
+});
+
+gulp.task('optimize',['minify-css', 'concatOptim'],function(){
+
+});
+
+gulp.task('default', ['clear', 'concatBuild'],function(){       // kind of dev build
     return gulp.src(folders,{base:'./'})
         .pipe(gulp.dest('./build/'))
-
 });
