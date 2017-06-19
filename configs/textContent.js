@@ -18,7 +18,7 @@ let textContent = {
         [
             ' - June 2017 - ',
             "",
-            'After sending a couple of job applications Michal got invited for an interview.', 'He did a research about the company, '+
+            'After sending a couple of job applications Michał got invited for an interview.', 'He did a research about the company, '+
         'prepared his documents and now he\'s ready to go out to the headquarters to meet a pair of recruiters that had called him few days earlier.'
         ]
     ],
@@ -29,7 +29,7 @@ let textContent = {
             '*ding-dong!*'
         ],
         [
-            'Good morning, I have an appointment with Mr. Recruiter X and Mr. Recruiter Y in 15 minutes. Am I too early?'
+            'Good morning, I have an appointment with Mr. Recruiter A and Mr. Recruiter B in 15 minutes. Am I too early?'
         ],
         [
             'No, not at all, please come in.'
@@ -42,7 +42,7 @@ let textContent = {
     chapterTwo:[
         [
             '',
-            'Please sit down, Mr Zabrzyjewski. First, tell us something about your working experience.'
+            'Please sit down, Mr. Zabrzyjewski. First, tell us something about your working experience.'
         ],
         [
             'I spent last 4 months working as a web developer using vanilla JavaScript and learning tricks in CSS(SASS) and HTML(Jade). Sometimes I also had to work with Node.js.'
@@ -85,7 +85,7 @@ let textContent = {
             'Okay Mr. Recruiter, we have to decide who to hire. What do you think?'
         ],
         [
-            'Well, we had that guy who made a game, what was his name again? Michal?'
+            'Well, we had that guy who made a game, what was his name again? Michał?'
         ],
         [
             'Mr. Zabrzyjewski, yes, I think he is a fitting person.'
@@ -102,7 +102,7 @@ let textContent = {
             " ",
             ' - GOOD ENDING - ',
             " ",
-            'Soon after contacting Michal by sending him an email on zabrzyjewski@gmail.com he started working for your company and you noticed a lot of profits after hiring him! That was a good move!'
+            'Soon after contacting Michał by sending him an email on zabrzyjewski@gmail.com he started working for your company and you noticed a lot of profits after hiring him! That was a good move!'
         ],
         [
             " ",
@@ -114,7 +114,7 @@ let textContent = {
             " ",
             ' - BAD ENDING - ',
             " ",
-            'Because you decided not to invite Michal for further talks he started working for another company. '+
+            'Because you decided not to invite Michał for further talks he started working for another company. '+
             'If you happen to change your mind please contact him by sending an email to zabrzyjewski@gmail.com'
         ],
         [
